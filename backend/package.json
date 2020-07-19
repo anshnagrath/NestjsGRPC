@@ -1,0 +1,14 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "microservice assignment",
+  "main": "install.sh",
+  "author": "ansh-nagrath",
+  "license": "MIT",
+  "scripts": {
+    "start": "chmod 777 ./install.sh && ./install.sh"
+  },
+  "dependencies": {
+    "grpc": "^1.24.3"
+  }
+}

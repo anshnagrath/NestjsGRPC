@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div class="text-center mt-4"> 
+    <p >Assignment For MEAN Stack Dev: </p> 
+  </div>
+
+  <div class="col-12 text-center">
+   
+        <div class="m-3">
+        <div class="m-3">
+          <p > {{heroName}} </p>
+        </div>
+          <div id="main-wrapper">
+            <section role="main">
+              <div class="dialPad compact">
+               
+                <div >
+                  <input type="text" disabled   [(ngModel)]="inputValue.allNumbers" class="full-width"/>
+                </div>
+                <div class="dials">
+            <ol>
+            <li *ngFor = "let data of allNumbers"  class="digits">
+            <p (click)=sendCodes(data)>
+              <strong>{{data.Number }}</strong>
+              <sup>{{data.Letters}}</sup>
+            </p>
+            </li>
+            </ol>
+            </div>
+            </div>
+            </section>
+            </div>
+        </div>
+  </div>
+</div>

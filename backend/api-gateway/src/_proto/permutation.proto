@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package permutation;
+
+//  PERMUTAION RPC DEFINATION    
+service PermutationController {
+  rpc decodeHeroName (encodedName) returns (permutaions);
+}
+// ENCODEDNAME  (REQUEST)  RPC 
+message  encodedName {
+    string data = 1 ;
+}
+// DECODEDPERMUTATION  (RESPONSE)  RPC 
+message  permutaions {
+    repeated string decodedPermutation = 1 ;
+    string superHeroName = 2;
+}
