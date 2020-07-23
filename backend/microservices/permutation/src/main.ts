@@ -21,6 +21,7 @@ async function bootstrap() {
     },
   };
   const app = await NestFactory.createMicroservice(AppModule, microserviceOptions);
+
   app.listen(() => {
     logger.log('Permutation Microservice is listening...');
   });

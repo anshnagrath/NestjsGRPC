@@ -9,6 +9,6 @@ export class CallHeroService {
   constructor(private http:HttpClient) { 
   }
    decodeNumber(str){
-   return this.http.post(environment.baseUrl,{data:str})
+   return this.http.post(`${environment.baseUrl}/decode`,{data:str})
    }
   }
