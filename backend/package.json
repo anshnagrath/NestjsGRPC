@@ -9,6 +9,6 @@
     "start": "chmod 777 ./install.sh && ./install.sh"
   },
   "dependencies": {
-    "grpc": "^1.24.3"
+    "grpc": "^1.24.9"
   }
 }
